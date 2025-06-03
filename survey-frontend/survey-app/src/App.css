@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+  background-color: #f8f9fa; /* Light background */
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Animate logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Main content box */
+main {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  min-height: 400px;
+  text-align: left;
+}
+
+/* Navigation buttons */
+.custom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+  flex: 1;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* Active button style */
+.custom-nav button.active {
+  background-color: #cce5ff; /* Light blue background */
+  border-color: #66b0ff;     /* Optional: a matching blue border */
+  color: #004085;            /* Dark blue text for contrast */
+  font-weight: 600;          /* Slightly bolder text */
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+legend {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
